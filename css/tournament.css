@@ -1,0 +1,125 @@
+body {
+	background: url(../icon_crucible.svg) #333 no-repeat;
+	background: url(../images/trials1_paint.png) #333 no-repeat;
+	background-size: cover;
+}
+body * {
+	font-family: Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+#demo .jQBracket {
+	/*width: 400px;*/
+}
+#demo .round {
+	width: 210px;
+}
+#demo .teamContainer .team {
+	width: 210px;
+	height: 44px;
+	font-size: 18px;
+	background-color: #000;
+}
+
+#demo .teamContainer .team .label {
+	padding: 10px 7px 4px 7px; 
+	width: 166px;
+	height: 40px;
+	font-weight: 600;
+}
+
+#demo .teamContainer .team .score {
+	padding: 5px 7px 3px 7px;
+	width: 40px;
+	height: 40px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#demo .teamContainer .team {
+	margin-bottom: 4px;
+	border: 2px solid #14191E;
+}
+
+#demo .teamContainer .team .label {
+	margin-right: 4px;
+	background-color: #2A333E;
+	color: #FEFEFE;
+}
+#demo .teamContainer .team.win {
+	border-color: #14191e;
+}
+#demo .teamContainer .team.win .label {
+	color: #FFCE1F;
+}
+#demo .teamContainer .team.lose .label {
+	
+}
+
+#demo .teamContainer .team .score {
+	background-color: #CCC;
+	
+}
+#demo .teamContainer .team.win .score {
+	background-color: #0c1e3f;
+	color: #FEFEFE;
+}
+#demo .teamContainer .team.lose .score {
+	background-color: #d64f24;
+	color: #FEFEFE;
+}
+
+#demo .teamContainer .team.highlight {
+    border-color: #5AA56A;
+}
+
+#demo .connector {
+    border-width: 4px;
+    border-color: #CCC;
+}
+#demo .teamContainer > .connector > .connector {
+	box-shadow: 2px 2px 2px #222;
+}
+#demo .connector.highlightWinner {
+    border-color: #FFCE1F;
+}
+#demo .connector.highlight,
+#demo .connector div.connector.highlight {
+    border-color: #5AA56A
+}
+#demo .team .bubble {
+	right: -38px;
+    top: 8px;
+}
+
+#teams ul > li {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+}
+#teams table {
+	border-collapse: collapse;
+}
+#teams table th, #teams table td {
+	margin: 0;
+	padding: 0;
+	border-right: 2px solid rgba(50, 50, 50, .3);
+}
+#teams table th {
+	padding: 7px;
+	min-width: 120px;
+	text-align: left;
+	color: #FEFEFE;
+	background-color: #171c22; /*9F342F;*/
+}
+#teams table td {
+	padding: 7px;
+	min-width: 120px;
+	background-color: #14191e;
+	color: #f5f5f5;
+	font-size: 13px;
+	text-align: left;
+}
+
+

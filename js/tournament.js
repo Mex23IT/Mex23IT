@@ -1,22 +1,3 @@
-var singleElimination = {
-  "teams": [              // Matchups
-    ["Team 1", "Team 2"], // First match
-    ["Team 3", "Team 4"]  // Second match
-  ],
-  "results": [            // List of brackets (single elimination, so only one bracket)
-    [                     // List of rounds in bracket
-      [                   // First round in this bracket
-        [1, 2],           // Team 1 vs Team 2
-        [3, 4]            // Team 3 vs Team 4
-      ],
-      [                   // Second (final) round in single elimination bracket
-        //[5, 6],           // Match for first place
-        //[7, 8]            // Match for 3rd place
-      ]
-    ]
-  ]
-};
-
 var teams = [
   {
     name: "GhostEagles",
@@ -72,15 +53,38 @@ var eightTeamsTournament = {
         [5,2]
       ],
       [
-        [3,5], [5, 4]
+        [], [5, 4]
       ]
   ]]
 };
 
-$('#demo').bracket({
+
+$('#brackets').bracket({
   init: eightTeamsTournament
 });
 $('#teams').bracketTeams({
   init: teams
 });
 
+
+var singleElimination = {
+  "teams": [              // Matchups
+    [teams[0].name, teams[1].name], // First match
+    [teams[2].name, teams[3].name]  // Second match
+  ],
+  "results": [            // List of brackets (single elimination, so only one bracket)
+    [                     // List of rounds in bracket
+      [                   // First round in this bracket
+        [],           // Team 1 vs Team 2
+        []            // Team 3 vs Team 4
+      ],
+      [                   // Second (final) round in single elimination bracket
+        //[5, 6],           // Match for first place
+        //[7, 8]            // Match for 3rd place
+      ]
+    ]
+  ]
+};
+/*$('#brackets').bracket({
+  init: singleElimination
+});*/

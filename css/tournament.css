@@ -8,27 +8,27 @@ body * {
 	box-sizing: border-box;
 }
 
-#demo .jQBracket {
-	/*width: 400px;*/
+#brackets {
+
 }
-#demo .round {
+#brackets .round {
 	width: 210px;
 }
-#demo .teamContainer .team {
+#brackets .teamContainer .team {
 	width: 210px;
 	height: 44px;
 	font-size: 18px;
 	background-color: #000;
 }
 
-#demo .teamContainer .team .label {
+#brackets .teamContainer .team .label {
 	padding: 10px 7px 4px 7px; 
 	width: 166px;
 	height: 40px;
 	font-weight: 600;
 }
 
-#demo .teamContainer .team .score {
+#brackets .teamContainer .team .score {
 	padding: 5px 7px 3px 7px;
 	width: 40px;
 	height: 40px;
@@ -36,58 +36,58 @@ body * {
 	font-weight: 600;
 }
 
-#demo .teamContainer .team {
+#brackets .teamContainer .team {
 	margin-bottom: 4px;
 	border: 2px solid #14191E;
 }
 
-#demo .teamContainer .team .label {
+#brackets .teamContainer .team .label {
 	margin-right: 4px;
 	background-color: #2A333E;
 	color: #FEFEFE;
 }
-#demo .teamContainer .team.win {
+#brackets .teamContainer .team.win {
 	border-color: #14191e;
 }
-#demo .teamContainer .team.win .label {
+#brackets .teamContainer .team.win .label {
 	color: #FFCE1F;
 }
-#demo .teamContainer .team.lose .label {
+#brackets .teamContainer .team.lose .label {
 	
 }
 
-#demo .teamContainer .team .score {
+#brackets .teamContainer .team .score {
 	background-color: #CCC;
 	
 }
-#demo .teamContainer .team.win .score {
+#brackets .teamContainer .team.win .score {
 	background-color: #0c1e3f;
 	color: #FEFEFE;
 }
-#demo .teamContainer .team.lose .score {
+#brackets .teamContainer .team.lose .score {
 	background-color: #d64f24;
 	color: #FEFEFE;
 }
 
-#demo .teamContainer .team.highlight {
+#brackets .teamContainer .team.highlight {
     border-color: #5AA56A;
 }
 
-#demo .connector {
+#brackets .connector {
     border-width: 4px;
     border-color: #CCC;
 }
-#demo .teamContainer > .connector > .connector {
+#brackets .teamContainer > .connector > .connector {
 	box-shadow: 2px 2px 2px #222;
 }
-#demo .connector.highlightWinner {
+#brackets .connector.highlightWinner {
     border-color: #FFCE1F;
 }
-#demo .connector.highlight,
-#demo .connector div.connector.highlight {
+#brackets .connector.highlight,
+#brackets .connector div.connector.highlight {
     border-color: #5AA56A
 }
-#demo .team .bubble {
+#brackets .team .bubble {
 	right: -38px;
     top: 8px;
 }
